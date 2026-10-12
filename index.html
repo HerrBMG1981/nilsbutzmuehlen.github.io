@@ -3,216 +3,135 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Stapler Batterie Konfigurator</title>
+
+<title>Total Power in Motion | Nils Butzmühlen</title>
 
 <style>
+
 body{
     font-family: Arial, sans-serif;
     margin:0;
     background:#f5f7fa;
+    color:#333;
 }
 
 header{
-    background:#003366;
+    background:#002B5C;
     color:white;
     text-align:center;
-    padding:40px;
+    padding:60px 20px;
+}
+
+header h1{
+    margin:0;
+    font-size:2.5rem;
+}
+
+header p{
+    font-size:1.2rem;
 }
 
 .container{
     max-width:1000px;
-    margin:auto;
-    padding:30px;
+    margin:40px auto;
+    padding:20px;
 }
 
 .card{
     background:white;
     padding:30px;
-    border-radius:12px;
-    box-shadow:0 2px 15px rgba(0,0,0,0.1);
-}
-
-.form-group{
-    margin-bottom:18px;
-}
-
-label{
-    display:block;
-    margin-bottom:6px;
-    font-weight:bold;
-}
-
-input,select{
-    width:100%;
-    padding:10px;
-    border:1px solid #ccc;
-    border-radius:6px;
-    box-sizing:border-box;
-}
-
-button{
-    background:#00A651;
-    color:white;
-    font-size:16px;
-    border:none;
-    padding:15px 30px;
-    border-radius:8px;
-    cursor:pointer;
-}
-
-button:hover{
-    background:#008b44;
-}
-
-.result{
-    display:none;
-    margin-top:25px;
-    background:#e8f5e9;
     border-radius:10px;
-    padding:20px;
+    box-shadow:0 2px 10px rgba(0,0,0,.1);
+    margin-bottom:20px;
 }
 
-.recommendation{
-    font-size:20px;
-    color:#003366;
+.button{
+    display:inline-block;
+    background:#E30613;
+    color:white;
+    text-decoration:none;
+    padding:15px 25px;
+    border-radius:8px;
     font-weight:bold;
 }
+
+footer{
+    background:#002B5C;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
+
 </style>
+
 </head>
 
 <body>
 
 <header>
-    <h1>Stapler Batterie Konfigurator</h1>
-    <p>Schnelle Batterie-Empfehlung für Flurförderzeuge</p>
+
+    <h1>🔋 TOTAL POWER IN MOTION</h1>
+
+    <p>
+        Industrial Battery Solutions
+    </p>
+
+    <p>
+        Nils Butzmühlen
+    </p>
+
 </header>
 
 <div class="container">
 
-<div class="card">
+    <div class="card">
 
-<h2>Fahrzeugdaten</h2>
+        <h2>Willkommen</h2>
 
-<div class="form-group">
-<label>Hersteller</label>
-<input type="text" id="hersteller">
-</div>
+        <p>
+            Diese Website befindet sich aktuell im Aufbau.
+        </p>
 
-<div class="form-group">
-<label>Modell</label>
-<input type="text" id="modell">
-</div>
+        <p>
+            Schon bald finden Sie hier:
+        </p>
 
-<div class="form-group">
-<label>Spannung</label>
-<select id="spannung">
-<option value="24">24 V</option>
-<option value="48">48 V</option>
-<option value="80">80 V</option>
-</select>
-</div>
+        <ul>
+            <li>Online Batterieanfrage</li>
+            <li>NexSys iON Lösungen</li>
+            <li>NexSys TPPL Lösungen</li>
+            <li>Produktportfolio</li>
+            <li>Direkte Kontaktmöglichkeiten</li>
+        </ul>
 
-<div class="form-group">
-<label>Kapazität (Ah)</label>
-<input type="number" id="ah" placeholder="z.B. 625">
-</div>
+    </div>
 
-<div class="form-group">
-<label>Schichtbetrieb</label>
-<select id="schicht">
-<option>1</option>
-<option>2</option>
-<option>3</option>
-</select>
-</div>
+    <div class="card">
 
-<div class="form-group">
-<label>Betriebsstunden pro Tag</label>
-<input type="number" id="stunden">
-</div>
+        <h2>Kontakt</h2>
 
-<div class="form-group">
-<label>Firmenname</label>
-<input type="text" id="firma">
-</div>
+        <p>
+            Sales Representative IMS
+        </p>
 
-<div class="form-group">
-<label>Ansprechpartner</label>
-<input type="text" id="ansprechpartner">
-</div>
+        <p>
+            Nils Butzmühlen
+        </p>
 
-<div class="form-group">
-<label>E-Mail</label>
-<input type="email" id="mail">
-</div>
+        deine.mail@firma.de
+            Kontakt aufnehmen
+        </a>
 
-<button onclick="berechnen()">
-Empfehlung erstellen
-</button>
-
-<div class="result" id="ergebnis"></div>
+    </div>
 
 </div>
-</div>
 
-<script>
+<footer>
 
-function berechnen(){
+    © 2026 Nils Butzmühlen
 
-let spannung = parseInt(document.getElementById('spannung').value);
-let ah = parseInt(document.getElementById('ah').value);
-let schicht = parseInt(document.getElementById('schicht').value);
-
-let empfehlung = "";
-let technologie = "";
-
-if(schicht === 1){
-
-    technologie = "PzS / NexSys TPPL";
-
-    if(ah <= 500){
-        empfehlung = "24-48V Standardlösung";
-    }else{
-        empfehlung = "Hochkapazitätslösung";
-    }
-}
-
-if(schicht === 2){
-
-    technologie = "NexSys TPPL";
-
-    if(ah < 775){
-        empfehlung = "Opportunity Charging empfohlen";
-    }else{
-        empfehlung = "TPPL Hochleistungssystem";
-    }
-}
-
-if(schicht === 3){
-
-    technologie = "NexSys iON Lithium";
-
-    empfehlung = "Lithium-Ionen-System empfohlen";
-}
-
-document.getElementById("ergebnis").style.display = "block";
-
-document.getElementById("ergebnis").innerHTML = `
-
-<h3>Ihre Empfehlung</h3>
-
-<p><strong>Spannung:</strong> ${spannung} V</p>
-<p><strong>Kapazität:</strong> ${ah} Ah</p>
-<p><strong>Schichtbetrieb:</strong> ${schicht}</p>
-
-<p class="recommendation">${technologie}</p>
-
-<p>${empfehlung}</p>
-
-`;
-}
-
-</script>
+</footer>
 
 </body>
 </html>
