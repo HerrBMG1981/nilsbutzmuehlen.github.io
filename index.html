@@ -253,9 +253,82 @@ section{
  font-size:3rem;
  margin-bottom:15px;
 }
+.features-section{
+
+    max-width:1400px;
+    margin:0 auto;
+
+    display:grid;
+    grid-template-columns:repeat(5,1fr);
+
+    gap:20px;
+
+    padding:50px 20px;
+
+    background:#ffffff;
+}
+
+.feature-item{
+
+    display:flex;
+    align-items:flex-start;
+    gap:15px;
+}
+
+.feature-icon{
+
+    width:55px;
+    height:55px;
+
+    object-fit:contain;
+
+    flex-shrink:0;
+}
+
+.feature-item h3{
+
+    color:#002B5C;
+    margin-bottom:5px;
+
+    font-size:1.05rem;
+}
+
+.feature-item p{
+
+    font-size:0.9rem;
+    color:#555;
+    line-height:1.4;
+}
 
 @media(max-width:768px){
+.form-grid{
+        grid-template-columns:1fr;
+    }
 
+    .features-section{
+        grid-template-columns:1fr;
+    }
+
+    .feature-item{
+        padding-bottom:15px;
+        border-bottom:1px solid #e5e5e5;
+    }
+
+    .request-title{
+        font-size:1.7rem;
+    }
+
+    .card{
+        padding:20px;
+    }
+
+    input,
+    select,
+    textarea{
+        font-size:16px;
+    }
+
+}
  .navbar{
   padding:15px;
  }
@@ -357,7 +430,90 @@ section{
         📅 Termin vereinbaren
 
      </a>
+<section class="features-section">
 
+    <div class="feature-item">
+
+        <img src="images/material-handling.png"
+             alt="Material Handling"
+             class="feature-icon">
+
+        <div>
+            <h3>Material Handling</h3>
+            <p>
+                Batterien für Flurförderzeuge
+                und Logistikanwendungen
+            </p>
+        </div>
+
+    </div>
+
+    <div class="feature-item">
+
+        <img src="images/automation.png"
+             alt="Automation"
+             class="feature-icon">
+
+        <div>
+            <h3>Automation</h3>
+            <p>
+                Energiesysteme für AGVs
+                und AMRs
+            </p>
+        </div>
+
+    </div>
+
+    <div class="feature-item">
+
+        <img src="images/energy-storage.png"
+             alt="Energiespeicher"
+             class="feature-icon">
+
+        <div>
+            <h3>Energiespeicher</h3>
+            <p>
+                Stationäre Lösungen
+                für maximale Verfügbarkeit
+            </p>
+        </div>
+
+    </div>
+
+    <div class="feature-item">
+
+        <img src="images/service.png"
+             alt="Service"
+             class="feature-icon">
+
+        <div>
+            <h3>Service</h3>
+            <p>
+                Beratung, Wartung
+                und Support
+            </p>
+        </div>
+
+    </div>
+
+    <div class="feature-item">
+
+        <img src="images/calculate.png"
+             alt="Analyse & Monitoring"
+             class="feature-icon">
+
+        <div>
+            <h3>Analyse & Monitoring</h3>
+            <p>
+                Energieberechnung<br>
+                EnSite<br>
+                Simulation
+            </p>
+        </div>
+
+    </div>
+
+</section>
    </div>
 
   </div>
