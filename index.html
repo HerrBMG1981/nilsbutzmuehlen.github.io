@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
 
 <meta charset="UTF-8">
@@ -7,127 +8,256 @@
 
 <title>Total Power in Motion | Nils Butzmühlen</title>
 
-<meta name="description" content="Industrial Battery Solutions für Material Handling, Automation und Energiespeicher.">
+<meta name="description"
+content="Industrial Battery Solutions für Material Handling, Automation und Energiespeicher.">
 
 <meta property="og:type" content="website">
 <meta property="og:title" content="Total Power in Motion | Nils Butzmühlen">
-<meta property="og:description" content="Industrial Battery Solutions für Material Handling, Automation und Energiespeicher.">
-<meta property="og:image" content="images/linkedin-preview.jpeg">
+<meta property="og:description"
+content="Industrial Battery Solutions für Material Handling, Automation und Energiespeicher.">
+
+<meta property="og:image"
+content="images/linkedin-preview.jpg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
 
 <style>
 
 :root{
-    --primary:#002B5C;
-    --secondary:#E30613;
-    --light:#F5F7FA;
+ --primary:#002B5C;
+ --secondary:#E30613;
+ --light:#F5F7FA;
+ --text:#2d3748;
 }
 
-.request-section{
-    max-width:1200px;
-    margin:auto;
-    padding:40px 20px;
+*{
+ margin:0;
+ padding:0;
+ box-sizing:border-box;
 }
 
-.request-title{
-    color:var(--primary);
-    font-size:2rem;
-    margin-bottom:10px;
+html{
+ scroll-behavior:smooth;
 }
 
-.request-subtitle{
-    margin-bottom:30px;
-    color:#555;
+body{
+ font-family:Segoe UI,Arial,sans-serif;
+ background:#ffffff;
+ color:var(--text);
+ line-height:1.6;
 }
 
-.form-grid{
-    display:grid;
-    grid-template-columns:repeat(2,1fr);
-    gap:25px;
+header{
+ position:fixed;
+ top:0;
+ left:0;
+ width:100%;
+ background:white;
+ z-index:1000;
+ box-shadow:0 2px 12px rgba(0,0,0,.08);
 }
 
-.card{
-    background:#fff;
-    padding:25px;
-    border-radius:12px;
-    border:1px solid #e2e8f0;
-    box-shadow:0 4px 12px rgba(0,0,0,.05);
+.navbar{
+ max-width:1400px;
+ margin:auto;
+ padding:15px 25px;
+ display:flex;
+ justify-content:space-between;
+ align-items:center;
 }
 
-.card h3{
-    color:var(--primary);
-    margin-bottom:20px;
+.logo{
+ height:70px;
+ width:auto;
 }
 
-input,
-select,
-textarea{
-    width:100%;
-    min-height:52px;
-    padding:12px;
-    margin-bottom:15px;
-    border:1px solid #d1d5db;
-    border-radius:8px;
-    font-size:16px;
+.nav-links{
+ display:flex;
+ gap:25px;
+ align-items:center;
 }
 
-textarea{
-    min-height:120px;
-    resize:vertical;
+.nav-links a{
+ text-decoration:none;
+ color:var(--primary);
+ font-weight:600;
 }
 
-.checkbox{
-    display:flex;
-    gap:10px;
-    align-items:flex-start;
-    margin:25px 0;
+.booking-btn{
+ background:var(--secondary);
+ color:white !important;
+ padding:12px 20px;
+ border-radius:8px;
+ text-decoration:none;
 }
 
-.checkbox input{
-    width:auto;
-    margin-top:5px;
+.hero{
+ background:
+ linear-gradient(rgba(0,43,92,.78),
+ rgba(0,43,92,.78)),
+ url("images/hero-background.jpg");
+
+ background-size:cover;
+ background-position:center;
+
+ min-height:100vh;
+
+ display:flex;
+ align-items:center;
+ justify-content:center;
+
+ padding:140px 20px 80px;
 }
 
-.submit-wrapper{
-    text-align:center;
+.hero-content{
+
+ max-width:1200px;
+ width:100%;
+
+ display:grid;
+ grid-template-columns:350px 1fr;
+
+ gap:60px;
+
+ align-items:center;
 }
 
-.submit-btn{
-    background:linear-gradient(
-        90deg,
-        #E30613,
-        #FF2B2B
-    );
+.profile-card{
 
-    color:white;
-    border:none;
-    border-radius:8px;
-    padding:18px 40px;
-    font-size:18px;
-    font-weight:bold;
-    cursor:pointer;
+ background:white;
+ padding:30px;
+ border-radius:18px;
+ text-align:center;
 
-    width:100%;
+ box-shadow:0 15px 40px rgba(0,0,0,.15);
+}
+
+.profile{
+ width:220px;
+ height:220px;
+ object-fit:cover;
+ border-radius:50%;
+ border:5px solid var(--secondary);
+}
+
+.profile-card h3{
+ margin-top:20px;
+ color:var(--primary);
+}
+
+.profile-card p{
+ color:#666;
+}
+
+.hero-text{
+ color:white;
+}
+
+.hero-text h1{
+
+ font-size:4rem;
+ line-height:1.1;
+ margin-bottom:20px;
+}
+
+.hero-text p{
+
+ font-size:1.2rem;
+ max-width:700px;
+ margin-bottom:30px;
+}
+
+.hero-buttons{
+
+ display:flex;
+ gap:15px;
+ flex-wrap:wrap;
+}
+
+.btn{
+
+ display:inline-block;
+ text-decoration:none;
+
+ padding:15px 25px;
+ border-radius:8px;
+ font-weight:700;
+}
+
+.btn-primary{
+ background:var(--secondary);
+ color:white;
+}
+
+.btn-secondary{
+ border:2px solid white;
+ color:white;
+}
+
+section{
+ padding:80px 20px;
+}
+
+.container{
+ max-width:1200px;
+ margin:auto;
+}
+
+.section-title{
+ text-align:center;
+ margin-bottom:50px;
+ color:var(--primary);
+}
+
+.features{
+
+ display:grid;
+ grid-template-columns:repeat(4,1fr);
+ gap:25px;
+}
+
+.feature-card{
+
+ background:white;
+ padding:30px;
+ border-radius:16px;
+
+ box-shadow:0 4px 12px rgba(0,0,0,.08);
+
+ text-align:center;
+}
+
+.feature-icon{
+ font-size:3rem;
+ margin-bottom:15px;
 }
 
 @media(max-width:768px){
 
-    .form-grid{
-        grid-template-columns:1fr;
-    }
+ .navbar{
+  padding:15px;
+ }
 
-    .request-title{
-        font-size:1.7rem;
-    }
+ .nav-links{
+  display:none;
+ }
 
-    .card{
-        padding:20px;
-    }
+ .hero-content{
+  grid-template-columns:1fr;
+ }
 
-    input,
-    select,
-    textarea{
-        font-size:16px;
-    }
+ .hero-text h1{
+  font-size:2.2rem;
+ }
+
+ .profile{
+  width:180px;
+  height:180px;
+ }
+
+ .features{
+  grid-template-columns:1fr;
+ }
 
 }
 
@@ -137,313 +267,97 @@ textarea{
 
 <body>
 
+<header>
+
+ <div class="navbar">
+
+  <img
+   src="images/logo.png"
+   alt="EnerSys Logo"
+   class="logo">
+
+  <div class="nav-links">
+
+   <a href="#battery-request">Batterieanfrage</a>
+
+   <a href="#portfolio">Portfolio</a>
+
+   <a href="#kontakt">Kontakt</a>
+
+   <a
+    href="#BOOKINGS_LINK"
+    class="booking-btn">
+
+    Termin vereinbaren
+
+   </a>
+
+  </div>
+
+ </div>
+
+</header>
+
 <section class="hero">
 
-    <img
-        src="images/logo.png"
-        alt="EnerSys Logo"
-        class="logo">
+ <div class="hero-content">
 
-    <br>
+  <div class="profile-card">
 
-    <img
-en"
-       <img src="images/nils-butzmuehlen.jpg"
-     alt="Nils Butzmühlen"
-     class="profile">
+   <img
+    src="images/nils-butzmuehlen.jpg"
+    alt="Profilbild"
+    class="profile">
 
-    <h2>Total Power in Motion</h1>
+   <h3>Nils Butzmühlen</h3>
 
-    <h3>Nils Butzmühlen<br><h4>Sales Representative IMS
-    </p>
+   <p>Sales Representative IMS</p>
 
-    <div class="buttons">
+  </div>
 
-        <a href="#battery-request    🔋 Batterieanfrage
-        </a>
+  <div class="hero-text">
 
-        <a href="pdf/Total-Power-in-Motion.pdf"
-           class="btn btn-outline"
-           target="_blank">
-            ⚡ Produktportfolio
-        </a>
+   <h1>
+    TOTAL POWER<br>
+    IN MOTION
+   </h1>
 
-    </div>
+   <p>
 
-</section
-       <a href="pdf/Total-Power-in-Motion.pdf"
-   class="btn btn-outline"
-   target="_blank">
-    ⚡ Produktportfolio
+     Energielösungen für Material Handling,
+     Automation, Energiespeicher und
+     Ladeinfrastruktur.
 
-    </div>
+   </p>
 
-</section>
+   <div class="hero-buttons">
 
-<h2>⚡ Produktportfolio</h2>
- 
-<p>
-Erhalten Sie einen Überblick über unsere Lösungen für
-Material Handling, Automation und Energiespeicher.
-</p>
- 
-<br>
- 
-<iframe
-src="pdf/Total-Power-in-Motion.pdf"
-width="100%"
-height="700"
-style="border:1px solid #ddd; border-radius:10px;">
-</iframe>
- 
-<br><br>
- 
-<div style="text-align:center;">
- 
-im Vollbild öffnen
- 
-</d
-class="download-btn"
-style="margin-left:10px;">
- 
-📥 PDF herunterladen
- 
-</a>
- 
-<
-</section>
-<section id="battery-request" class="request-section">
+     <a href="#battery-request"
+        class="btn btn-primary">
 
-    <h2 class="request-title">
-        Batterieanfrage
-    </h2>
+        🔋 Batterieanfrage
 
-    <p class="request-subtitle">
-        Geben Sie die wichtigsten Informationen ein.
-        Ich melde mich kurzfristig mit einer passenden Lösung.
-    </p>
+     </a>
 
-    <form action="https://formspree.io/f/xqpelogg"
-          method="POST">
+     <a href="pdf/Total-Power-in-Motion.pdf"
+        download
+        class="btn btn-secondary">
 
-        <div class="form-grid">
+        ⚡ Produktportfolio
 
-            <div class="card">
+     </a>
 
-                <h3>1. Batteriedaten</h3>
+     <a href="#BOOKINGS_LINK"
+        class="btn btn-secondary">
 
-                <select name="technologie" required>
-                    <option value="">Batterietechnologie wählen</option>
-                    <option>NexSys iON</option>
-                    <option>NexSys TPPL</option>
-                    <option>PzS</option>
-                    <option>OPzS</option>
-                </select>
+        📅 Termin vereinbaren
 
-                <select name="spannung">
-                    <option value="">Spannung wählen</option>
-                    <option>24V</option>
-                    <option>36V</option>
-                    <option>48V</option>
-                    <option>72V</option>
-                    <option>80V</option>
-                </select>
+     </a>
 
-                <input type="text"
-                       name="kapazitaet"
-                       placeholder="Kapazität (Ah)">
+   </div>
 
-                <input type="text"
-                       name="stecker"
-                       placeholder="Steckertyp">
+  </div>
 
-            </div>
-
-            <div class="card">
-
-                <h3>2. Fahrzeugdaten</h3>
-
-                <select name="hersteller">
-                    <option value="">Hersteller</option>
-                    <option>Toyota</option>
-                    <option>Jungheinrich</option>
-                    <option>Linde</option>
-                    <option>STILL</option>
-                    <option>Crown</option>
-                    <option>Sonstige</option>
-                </select>
-
-                <input type="text"
-                       name="modell"
-                       placeholder="Fahrzeugmodell">
-
-                <select name="schicht">
-                    <option value="">Schichtmodell</option>
-                    <option>1-Schicht</option>
-                    <option>2-Schicht</option>
-                    <option>3-Schicht</option>
-                </select>
-
-                <input type="text"
-                       name="stunden"
-                       placeholder="Betriebsstunden pro Jahr">
-
-            </div>
-
-            <div class="card">
-
-                <h3>3. Finanzierung</h3>
-
-                <select name="finanzierung">
-                    <option value="">Bitte wählen</option>
-                    <option>Kauf</option>
-                    <option>Rental</option>
-                    <option>Full Service</option>
-                    <option>Beratung</option>
-                </select>
-
-                <select name="laufzeit">
-                    <option value="">Laufzeit</option>
-                    <option>24 Monate</option>
-                    <option>36 Monate</option>
-                    <option>48 Monate</option>
-                    <option>60 Monate</option>
-                </select>
-
-            </div>
-
-            <div class="card">
-
-                <h3>4. Ladeinfrastruktur</h3>
-
-                <select name="ladegeraete">
-                    <option value="">Ladegeräte vorhanden?</option>
-                    <option>Ja</option>
-                    <option>Nein</option>
-                </select>
-
-                <select name="ladestation">
-                    <option value="">Ladestation geplant?</option>
-                    <option>Ja</option>
-                    <option>Nein</option>
-                </select>
-
-                <select name="monitoring">
-                    <option value="">Monitoring gewünscht?</option>
-                    <option>Wi-iQ</option>
-                    <option>EnSite</option>
-                    <option>Truck iQ</option>
-                    <option>Ja</option>
-                    <option>Nein</option>
-                </select>
-
-            </div>
-
-            <div class="card">
-
-                <h3>5. Kontaktdaten</h3>
-
-                <input type="text"
-                       name="name"
-                       placeholder="Name"
-                       required>
-
-                <input type="text"
-                       name="firma"
-                       placeholder="Firma"
-                       required>
-
-                <input type="email"
-                       name="email"
-                       placeholder="E-Mail"
-                       required>
-
-                <input type="tel"
-                       name="telefon"
-                       placeholder="Telefon">
-
-                <textarea
-                    name="info"
-                    placeholder="Zusätzliche Informationen"></textarea>
-
-            </div>
-
-        </div>
-
-        <label class="checkbox">
-
-            <input type="checkbox" required>
-
-            <span>
-                Ich habe die Datenschutzerklärung gelesen
-                und stimme der Verarbeitung meiner Daten zu.
-            </span>
-
-        </label>
-
-        <div class="submit-wrapper">
-
-            <button
-                type="submit"
-                class="submit-btn">
-
-                Anfrage absenden
-
-            </button>
-
-        </div>
-
-    </form>
+ </div>
 
 </section>
-
-<section class="section">
-
-    <h2>📞 Kontakt</h2>
-
-    <div class="contact-buttons">
-
-        <a href="tel:+491717322728" class=nrufen
-        </a>
-
-        <a href="mailto:nils.butzmuehlen@de.enersys.com"
-           class="contact-btn">
-            📧 E-Mail
-        </a>
-
-        <a href="https://www.linkedin.com/in/nils-butzm%C3%BChlen-864b7a27a/?isSelfProfile"
-           target="_blank"
-           class="contact-btn">
-            🔗 LinkedIn
-        </a>
-
-    </div>
-
-</section>
-
-<footer>
-
-    <p>
-
-        impressum.html
-            Impressum
-        </a>
-
-        |
-
-        datenschutz.html
-            Datenschutz
-        </a>
-
-    </p>
-
-    <br>
-
-    <p>
-        © 2026 Nils Butzmühlen
-    </p>
-
-</footer>
-
-</body>
-</html>
