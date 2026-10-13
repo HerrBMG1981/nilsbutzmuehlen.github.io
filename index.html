@@ -212,62 +212,186 @@ style="margin-left:10px;">
  
 <
 </section>
-<section id="battery-request" class="section">
+<section id="battery-request" class="request-section">
 
-    <h2>🔋 Batterieanfrage</h2>
+    <h2 class="request-title">
+        Batterieanfrage
+    </h2>
+
+    <p class="request-subtitle">
+        Geben Sie die wichtigsten Informationen ein.
+        Ich melde mich kurzfristig mit einer passenden Lösung.
+    </p>
 
     <form action="https://formspree.io/f/xqpelogg"
           method="POST">
-        <input
-            type="hidden"
-            name="_subject"
-            value="Neue Batterieanfrage Website">
 
-        <input
-            type="text"
-            name="Name"
-            placeholder="Name"
-            required>
+        <div class="form-grid">
 
-        <input
-            type="email"
-            name="E-Mail"
-            placeholder="E-Mail"
-            required>
+            <div class="card">
 
-        <input
-            type="text"
-            name="Firma"
-            placeholder="Firma">
+                <h3>1. Batteriedaten</h3>
 
-        <textarea
-            name="Anfrage"
-            placeholder="Beschreiben Sie Ihre Anwendung oder Ihren Bedarf."
-            required></textarea>
+                <select name="technologie" required>
+                    <option value="">Batterietechnologie wählen</option>
+                    <option>NexSys iON</option>
+                    <option>NexSys TPPL</option>
+                    <option>PzS</option>
+                    <option>OPzS</option>
+                </select>
+
+                <select name="spannung">
+                    <option value="">Spannung wählen</option>
+                    <option>24V</option>
+                    <option>36V</option>
+                    <option>48V</option>
+                    <option>72V</option>
+                    <option>80V</option>
+                </select>
+
+                <input type="text"
+                       name="kapazitaet"
+                       placeholder="Kapazität (Ah)">
+
+                <input type="text"
+                       name="stecker"
+                       placeholder="Steckertyp">
+
+            </div>
+
+            <div class="card">
+
+                <h3>2. Fahrzeugdaten</h3>
+
+                <select name="hersteller">
+                    <option value="">Hersteller</option>
+                    <option>Toyota</option>
+                    <option>Jungheinrich</option>
+                    <option>Linde</option>
+                    <option>STILL</option>
+                    <option>Crown</option>
+                    <option>Sonstige</option>
+                </select>
+
+                <input type="text"
+                       name="modell"
+                       placeholder="Fahrzeugmodell">
+
+                <select name="schicht">
+                    <option value="">Schichtmodell</option>
+                    <option>1-Schicht</option>
+                    <option>2-Schicht</option>
+                    <option>3-Schicht</option>
+                </select>
+
+                <input type="text"
+                       name="stunden"
+                       placeholder="Betriebsstunden pro Jahr">
+
+            </div>
+
+            <div class="card">
+
+                <h3>3. Finanzierung</h3>
+
+                <select name="finanzierung">
+                    <option value="">Bitte wählen</option>
+                    <option>Kauf</option>
+                    <option>Rental</option>
+                    <option>Full Service</option>
+                    <option>Beratung</option>
+                </select>
+
+                <select name="laufzeit">
+                    <option value="">Laufzeit</option>
+                    <option>24 Monate</option>
+                    <option>36 Monate</option>
+                    <option>48 Monate</option>
+                    <option>60 Monate</option>
+                </select>
+
+            </div>
+
+            <div class="card">
+
+                <h3>4. Ladeinfrastruktur</h3>
+
+                <select name="ladegeraete">
+                    <option value="">Ladegeräte vorhanden?</option>
+                    <option>Ja</option>
+                    <option>Nein</option>
+                </select>
+
+                <select name="ladestation">
+                    <option value="">Ladestation geplant?</option>
+                    <option>Ja</option>
+                    <option>Nein</option>
+                </select>
+
+                <select name="monitoring">
+                    <option value="">Monitoring gewünscht?</option>
+                    <option>Wi-iQ</option>
+                    <option>EnSite</option>
+                    <option>Truck iQ</option>
+                    <option>Ja</option>
+                    <option>Nein</option>
+                </select>
+
+            </div>
+
+            <div class="card">
+
+                <h3>5. Kontaktdaten</h3>
+
+                <input type="text"
+                       name="name"
+                       placeholder="Name"
+                       required>
+
+                <input type="text"
+                       name="firma"
+                       placeholder="Firma"
+                       required>
+
+                <input type="email"
+                       name="email"
+                       placeholder="E-Mail"
+                       required>
+
+                <input type="tel"
+                       name="telefon"
+                       placeholder="Telefon">
+
+                <textarea
+                    name="info"
+                    placeholder="Zusätzliche Informationen"></textarea>
+
+            </div>
+
+        </div>
 
         <label class="checkbox">
 
-            <input
-                type="checkbox"
-                required>
+            <input type="checkbox" required>
 
             <span>
-                Ich habe die
-                datenschutz.html
-                    Datenschutzerklärung
-                </a>
-                gelesen und stimme der Verarbeitung meiner Daten zu.
+                Ich habe die Datenschutzerklärung gelesen
+                und stimme der Verarbeitung meiner Daten zu.
             </span>
 
         </label>
 
-        <button
-            type="submit"
-            class="submit-btn">
+        <div class="submit-wrapper">
 
-            🔋 Anfrage absenden
+            <button
+                type="submit"
+                class="submit-btn">
 
-        </button>
+                Anfrage absenden
+
+            </button>
+
+        </div>
 
     </form>
 
