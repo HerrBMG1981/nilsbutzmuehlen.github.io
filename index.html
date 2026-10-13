@@ -79,20 +79,47 @@ header{
 }
 
 .navbar{
-    max-width:1400px;
+    max-width:1600px;
     margin:auto;
-    padding:15px 25px;
+    padding:12px 20px;
+
     display:flex;
     align-items:center;
     justify-content:flex-start;
-}
 
+    gap:25px;
+}
 .logo{
- height:80px;
- width:auto;
- display:block;
+    height:60px;
+    width:auto;
+    flex-shrink:0;
+}
+    .top-feature{
+    display:flex;
+    align-items:center;
+    gap:8px;
 }
 
+.mini-icon{
+    width:32px;
+    height:32px;
+    object-fit:contain;
+    flex-shrink:0;
+}
+
+.feature-text strong{
+    display:block;
+    color:#002B5C;
+    font-size:13px;
+    line-height:1.1;
+}
+
+.feature-text span{
+    display:block;
+    color:#666;
+    font-size:11px;
+    line-height:1.1;
+}
 .nav-links{
  display:flex;
  gap:25px;
@@ -362,15 +389,83 @@ section{
 
 <body>
 
+
 <header>
 
     <div class="navbar">
 
-        <img
-            src="images/logo.png"
-            alt="EnerSys Logo"
-            class="logo">
+        <img src="images/logo.png"
+             alt="EnerSys Logo"
+             class="logo">
 
+        <div class="top-feature">
+
+            <img src="images/material-handling.png"
+                 alt="Material Handling"
+                 class="mini-icon">
+
+            <div class="feature-text">
+                <strong>Material Handling</strong>
+                <span>Batterien für Flurförderzeuge</span>
+            </div>
+
+        </div>
+
+        <div class="top-feature">
+
+            <img src="images/automation.png"
+                 alt="Automation"
+                 class="mini-icon">
+
+            <div class="feature-text">
+                <strong>Automation</strong>
+                <span>AGVs & AMRs</span>
+            </div>
+
+        </div>
+
+        <div class="top-feature">
+
+            <img src="images/energy-storage.png"
+                 alt="Energiespeicher"
+                 class="mini-icon">
+
+            <div class="feature-text">
+                <strong>Energiespeicher</strong>
+                <span>Stationäre Lösungen</span>
+            </div>
+
+        </div>
+
+        <div class="top-feature">
+
+            <img src="images/service.png"
+                 alt="Service"
+                 class="mini-icon">
+
+            <div class="feature-text">
+                <strong>Service</strong>
+                <span>Beratung & Support</span>
+            </div>
+
+        </div>
+
+        <div class="top-feature">
+
+            <img src="images/calculate.png"
+                 alt="Analyse & Monitoring"
+                 class="mini-icon">
+
+            <div class="feature-text">
+                <strong>Analyse & Monitoring</strong>
+                <span>EnSite & Simulation</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</header>
     </div>
 
 </header>
@@ -514,10 +609,4 @@ section{
     </div>
 
 </section>
-   </div>
 
-  </div>
-
- </div>
-
-</section>
